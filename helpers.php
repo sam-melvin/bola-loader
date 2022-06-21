@@ -109,7 +109,7 @@ function checkIfUserLoggedIn(): void
         $location = getPageLocation(PAGE_LOCATION_INDEX);
         break;
             
-        }
+        
 
         header($location);
         exit;
