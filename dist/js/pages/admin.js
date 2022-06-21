@@ -115,8 +115,9 @@ $('#btnSigninAdmin').on('click', function() {
               console.log('dataResult: ' + res);
                   if(res === 'success')
                   {
+                    weHaveSuccess = true;
                     location.replace("./");
-                     
+                    
                   }
                   else {
                       weHaveSuccess = false;
