@@ -3,9 +3,9 @@
  * Database configuration
  */
 $dbHost     = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '';
-$dbName     = 'bola_swerte';
+$dbUsername = 'u419103131_bolaswerte';
+$dbPassword = 'B0la@2k22';
+$dbName     = 'u419103131_bolaswerte';
 
 // Create database connection
 $conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
