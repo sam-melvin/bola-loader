@@ -104,27 +104,11 @@ function checkCurUserIsAllow(string $pagenum, string $userKey):void
 function checkIfUserLoggedIn(): void
 {
     $location = '';
-    if(isset($_SESSION[SESSION_TYPE])) {
-        switch ($_SESSION[SESSION_TYPE]) {
-            case USER_ADMIN:
-                $location = getPageLocation(PAGE_LOCATION_INDEX);
-                break;
-            case USER_STAFF:
-                $location = getPageLocation(PAGE_LOCATION_INDEX);
-                break;
-            case USER_LOADER:
-                $location = getPageLocation(PAGE_LOCATION_LOADER);
-                break;
-            case USER_BPO:
-                $location = getPageLocation(PAGE_LOCATION_BPO);
-                break;
-            case USER_INVESTOR:
-                $location = getPageLocation(PAGE_LOCATION_INVESTOR);
-                break;
-            case USER_FINANCE:
-                $location = getPageLocation(PAGE_LOCATION_FINANCE);
-                break;
-    
+    if(isset($_SESSION[UID])) {
+        
+        $location = getPageLocation(PAGE_LOCATION_INDEX);
+        break;
+            
         }
 
         header($location);
@@ -150,18 +134,6 @@ function getPageLocation($location): string
     switch ($location) {
         case PAGE_LOCATION_INDEX:
             $loc = 'Location: ./';
-            break;
-        case PAGE_LOCATION_LOADER:
-            $loc = 'Location: cashin.php';
-            break;
-        case PAGE_LOCATION_INVESTOR:
-            $loc = 'Location: wallet.php';
-            break;
-        case PAGE_LOCATION_BPO:
-            $loc = 'Location: applicants.php';
-            break;
-        case PAGE_LOCATION_FINANCE:
-            $loc = 'Location: banker.php';
             break;
         case PAGE_LOCATION_LOGIN:
             $loc = 'Location: login.php';

@@ -26,10 +26,6 @@ define('ROOT', dirname(__DIR__));
  */
 define('PAGE_LOCATION_INDEX', 'index');
 define('PAGE_LOCATION_LOGIN', 'login');
-define('PAGE_LOCATION_INVESTOR', 'wallet');
-define('PAGE_LOCATION_LOADER', 'cashin');
-define('PAGE_LOCATION_BPO', 'applicants');
-define('PAGE_LOCATION_FINANCE', 'finance');
 
 
 /**

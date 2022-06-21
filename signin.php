@@ -25,7 +25,7 @@ $requestData = [
 $user = User::where('username', $requestData['code'])
     // ->where('password', $requestData['passwd'])
     ->where(function ($query) {
-        $query->where('type', USER_ADMIN)->orWhere('type', USER_STAFF)->orWhere('type', USER_LOADER)->orWhere('type', USER_INVESTOR)->orWhere('type', USER_BPO)->orWhere('type', USER_FINANCE)->orWhere('type', USER_SUPERADMIN);
+        $query->where('type', USER_LOADER);
     })
     ->first();
 /**
@@ -64,7 +64,7 @@ if ($user && $pass == 1) {
 
     $userOnline = User::where('id', $user->id)->update(array('isOnline' => '1'));
 
-    echo $user->type;
+    echo 'success';
 } else {
     echo 'error';
 }
