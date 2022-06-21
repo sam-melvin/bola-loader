@@ -104,13 +104,9 @@ function checkCurUserIsAllow(string $pagenum, string $userKey):void
 function checkIfUserLoggedIn(): void
 {
     $location = '';
-    if(isset($_SESSION[UID])) {
+    if(isset($_SESSION[SESSION_UID])) {
         
         $location = getPageLocation(PAGE_LOCATION_INDEX);
-        break;
-            
-        
-
         header($location);
         exit;
     }
