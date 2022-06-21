@@ -1,10 +1,17 @@
 let isLive = false;
 
-
+let api = '';
 $(function () {
   
 
-  
+  if (window.location.href.indexOf("test") > -1) {
+
+    api = 'http://test-bolaswerte.bolaswerte.com/api/';
+  }
+  else {
+    api = 'http://bolaswerte.bolaswerte.com/api/';
+  }
+
 
 $("#spinner").hide();
 var bgclass = "btn btn-app bg-success";

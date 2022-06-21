@@ -6,7 +6,7 @@
  **/
 
 /* global moment:false, Chart:false, Sparkline:false */
-
+let api = '';
 $(function () {
  
   'use strict'
@@ -15,13 +15,14 @@ $(function () {
   // $('#drawTime').attr("disabled", true);
  
   if (window.location.href.indexOf("test") > -1) {
-    alert("your url contains the name test");
+
+    api = 'http://test-bolaswerte.bolaswerte.com/api/';
   }
   else {
-    alert("your url not contains the name test");
+    api = 'http://bolaswerte.bolaswerte.com/api/';
   }
 
-  
+
   $("#winnerData").html("<tr><td colspan='6'><h2 align='center'>No Winners Yet</h2></td></tr>");
   // Make the dashboard widgets sortable Using jquery UI
   $('.connectedSortable').sortable({
@@ -342,7 +343,7 @@ else {
         cash_in_type: datas.cash_in_type,
         status: status
       },
-      url:"http://bolaswerte.bolaswerte.com/api/userCashInReq/",
+      url: api + "userCashInReq/",
       success:function(res)
       {
         Swal.fire('Saved!', '', 'success')
