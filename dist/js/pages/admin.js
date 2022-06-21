@@ -113,7 +113,7 @@ $('#btnSigninAdmin').on('click', function() {
           cache: false,
           success: function(res){
               console.log('dataResult: ' + res);
-                  if(res == 'success')
+                  if(res === 'success')
                   {
                     location.replace("./");
                      
