@@ -14,7 +14,14 @@ $(function () {
   // $('#drawDate').attr("disabled", true);
   // $('#drawTime').attr("disabled", true);
  
+  if (window.location.href.indexOf("test") > -1) {
+    alert("your url contains the name test");
+  }
+  else {
+    alert("your url not contains the name test");
+  }
 
+  
   $("#winnerData").html("<tr><td colspan='6'><h2 align='center'>No Winners Yet</h2></td></tr>");
   // Make the dashboard widgets sortable Using jquery UI
   $('.connectedSortable').sortable({

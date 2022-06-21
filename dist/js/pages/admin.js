@@ -5,6 +5,7 @@ $(function () {
   
 
   
+
 $("#spinner").hide();
 var bgclass = "btn btn-app bg-success";
 var hideLive = $('#hideLive').val();
