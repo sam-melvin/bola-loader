@@ -31,7 +31,6 @@ class CashIn extends Model
         $result = $this->join('users', 'user_cash_in.user_id', '=', 'users.id')
         ->select('user_cash_in.*', 'users.first_name', 'users.last_name', 'users.address')
         ->where('user_cash_in.status', '=', 'sent')
-        ->orWhere('user_cash_in.status', '=','declined')
         ->where('user_cash_in.loader_id', '=', $code)
         ->get();
 
