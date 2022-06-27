@@ -15,6 +15,13 @@ $navTrees = [
         'type' => USER_LOADER
     ],
     [
+        'title' => 'Bets',
+        'link' => 'bets.php',
+        'page' => 'bets',
+        'icon' => 'fa-circle',
+        'type' => USER_LOADER
+    ],
+    [
         'title' => 'Withdraw',
         'link' => 'withdraw.php',
         'page' => 'withdraw',

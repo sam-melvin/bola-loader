@@ -238,12 +238,12 @@ header .close:hover{
                   <p>&nbsp;</p>
                     <p>Share this link via</p>
                     <ul class="icons">
-                      <a href="#" data-share="facebook" data-width="800" data-height="600" data-title="Bola Swerte" data-quote="Bola Swerte" data-description="Bola Swerte" data-hashtag="#bola" data-url="http://bolaswerte.com/" class="shareBtn"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" data-share="messenger" data-width="800" data-height="600" data-title="Bola Swerte" data-quote="Bola Swerte" data-description="Bola Swerte" data-hashtag="#bola" data-url="http://bolaswerte.com/" data-redirect="http://new.bolaswerte.com/" class="shareBtn"><i class="fa-brands fa-facebook-messenger"></i></a>
-                      <a href="#"  data-share="twitter" data-width="800" data-height="600" data-title="Bola Swerte" data-hashtags="#bola" data-via="Bola Swerte Share" data-url="http://bolaswerte.com/" class="shareBtn"><i class="fab fa-twitter"></i></a>
+                      <a href="#" data-share="facebook" data-width="800" data-height="600" data-title="Bola Swerte" data-quote="Bola Swerte" data-description="Bola Swerte" data-hashtag="#bola" data-url="https://bolaswerte.com/reg_loader/?code=<?= $loggedUser->code ?>" class="shareBtn"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" data-share="messenger" data-width="800" data-height="600" data-title="Bola Swerte" data-quote="Bola Swerte" data-description="Bola Swerte" data-hashtag="#bola" data-url="https://bolaswerte.com/reg_loader/?code=<?= $loggedUser->code ?>" data-redirect="http://new.bolaswerte.com/" class="shareBtn"><i class="fa-brands fa-facebook-messenger"></i></a>
+                      <a href="#"  data-share="twitter" data-width="800" data-height="600" data-title="Bola Swerte" data-hashtags="#bola" data-via="Bola Swerte Share" data-url="https://bolaswerte.com/reg_loader/?code=<?= $loggedUser->code ?>" class="shareBtn"><i class="fab fa-twitter"></i></a>
                       <!-- <a href="#" class="shareBtn"><i class="fab fa-instagram"></i></a> -->
-                      <a href="#" data-share="whatsapp" data-title="Bola Swerte" data-url="http://bolaswerte.com/" class="shareBtn"><i class="fab fa-whatsapp"></i></a>
-                      <a href="#" data-share="email" data-title="Bola Swerte" data-url="http://bolaswerte.com/" data-subject="Bola Swerte" class="shareBtn"><i class="fa-solid fa-envelope"></i></a>
+                      <a href="#" data-share="whatsapp" data-title="Bola Swerte" data-url="https://bolaswerte.com/reg_loader/?code=<?= $loggedUser->code ?>" class="shareBtn"><i class="fab fa-whatsapp"></i></a>
+                      <a href="#" data-share="email" data-title="Bola Swerte" data-url="https://bolaswerte.com/reg_loader/?code=<?= $loggedUser->code ?>" data-subject="Bola Swerte" class="shareBtn"><i class="fa-solid fa-envelope"></i></a>
                      
                     </ul>
 
